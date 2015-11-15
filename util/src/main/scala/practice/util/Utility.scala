@@ -6,4 +6,8 @@ object Utility {
 
   def triple(x: Int): Int = x * 3
 
+  implicit class int(value: Int) {
+    def `++`: Int = value + 1
+  }
+  
 }
