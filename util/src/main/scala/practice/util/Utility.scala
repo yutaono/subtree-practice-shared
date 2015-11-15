@@ -8,6 +8,7 @@ object Utility {
 
   implicit class int(value: Int) {
     def `++`: Int = value + 1
+    def `--`: Int = value - 1
   }
   
 }
