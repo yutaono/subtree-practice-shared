@@ -17,6 +17,8 @@ object Utility {
       val r = (2 to value).toSet
       r.foldLeft(r)((ps, x) => if (ps(x)) ps -- (x * x to value by x) else ps)
     }
+    def isPerfectNumber: Boolean = value == divisors.sum
+    lazy val divisors: List[Int] = (value / 2 to 1 by -1).foldLeft[List[Int]](Nil)((ns, n) => if (value % n == 0) n :: ns else ns)
   }
   
 }
