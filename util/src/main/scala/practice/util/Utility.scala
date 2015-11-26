@@ -24,7 +24,7 @@ object Utility {
     def abs: Int = Math.abs(value)
     
     def isNoOne: Boolean = value == 1
-
+    def isNoTwo: Boolean = vlaue == 2
   }
 
 }
