@@ -19,6 +19,7 @@ object Utility {
     }
     def isPerfectNumber: Boolean = value == divisors.sum
     lazy val divisors: List[Int] = (value / 2 to 1 by -1).foldLeft[List[Int]](Nil)((ns, n) => if (value % n == 0) n :: ns else ns)
+    def isNoOne: Boolean = value == 1
   }
   
 }
